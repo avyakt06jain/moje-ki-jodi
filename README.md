@@ -9,9 +9,9 @@ India's most trusted matrimonial platform for lonely socks — an AI-powered, de
 
 ## Live demo
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/OBG3Fzbmepg" title="Moje Ki Jodi — Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Moje Ki Jodi — Demo video](https://img.youtube.com/vi/OBG3Fzbmepg/hqdefault.jpg)](https://youtu.be/OBG3Fzbmepg)
 
-**Watch on YouTube:** [https://youtu.be/OBG3Fzbmepg](https://youtu.be/OBG3Fzbmepg)
+Click the thumbnail to play on YouTube → [youtu.be/OBG3Fzbmepg](https://youtu.be/OBG3Fzbmepg)
 
 ---
 
