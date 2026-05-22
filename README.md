@@ -1,91 +1,145 @@
-# wreckathon-moje-ki-jodi
-**Tagline** : Hum banate hain Jodiyan... literally. (We make pairs... literally.)
+# Moje Ki Jodi
 
-## 🚀 The Big Idea
+**Hum banate hain Jodiyan… literally.**  
+*We make pairs… literally.*
 
-**Concept** : Moje ki Jodi is a revolutionary, AI-powered matrimonial platform designed to address the deep-seated societal issue of single, lost socks. By leveraging a proprietary "Pandit-Ji AI" algorithm and a deep understanding of textile-based astrology, we provide a sacred space for sock owners (acting as concerned parents) to find the perfect sole-mate for their lonely fabric companions.
+India's most trusted matrimonial platform for lonely socks — an AI-powered, deadpan-serious parody of desi matchmaking sites, built as a creative hackathon-style web experience.
 
-**Goal** : To win Wreckathon by executing an absurd idea with the deadpan seriousness of a billion-dollar startup, focusing on creativity and comedic value.
+---
 
------
+## Live demo
 
-## 📊 The Pitch Deck
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/OBG3Fzbmepg" title="Moje Ki Jodi — Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### The Problem: A Crisis of Singlehood
+**Watch on YouTube:** [https://youtu.be/OBG3Fzbmepg](https://youtu.be/OBG3Fzbmepg)
 
-**The Issue** : Every year, billions of socks are separated from their partners. They lead a lonely existence in the dark corners of closets, facing the constant judgment of the laundry basket and the fear of being repurposed as a cleaning rag. This domestic crisis leads to clutter, stress, and incomplete outfits, but the emotional toll on the socks and their owners is immeasurable.
+---
 
-### Our Solution: A Sacred Platform for Threads to Unite
+## The idea
 
-**The Platform** : Moje ki Jodi provides a holistic, end-to-end matchmaking solution for single textiles. We empower sock owners to take control of their socks' destiny, ensuring no sock has to face the dryer monster alone. Our platform combines ancient astrological wisdom with modern technology to facilitate lifelong pairings.
+Every year, billions of socks are separated from their partners. They linger in drawers, face laundry-basket judgment, and live in fear of becoming a cleaning rag. **Moje Ki Jodi** gives sock owners (acting as concerned parents) a sacred space to find the perfect **sole-mate** — blending textile astrology, matrimonial tropes, and modern swipe UX with zero irony in the UI copy.
 
-### ✨ Key Features
+---
 
-**The "Bio-Dhaga" (Profile Creation)** \*: Owners can create a detailed profile for their sock, including:
+## Features
 
-  * *Name*: e.g., "Righty Sharma," "Lefty Verma."
-  * *Glamour Shot*: A high-quality photo of the sock.
-  * *Brand Gotra*: Jockey, Nike, Adidas, "Local Market Biradari."
-  * *Complexion*: Fair (New), Wheatish (Gently Worn), Dusky (Faded), "Haldi-Stained."
-  * *Kundali Status*: Declaration of isManglik (if it has any red marks).
-  * *Family Background*: "From a reputed 6-pair pack from Myntra."
-  * *Bio: A heartfelt paragraph from the "parent" about their sock's virtues.\
+| Feature | Description |
+|--------|-------------|
+| **Sock CAPTCHA gate** | Entry verification: pick the “right” socks (government job, sanskari, reputed gotra) before entering the site |
+| **Bio-Dhaga registration** | Create a sock profile — name, brand gotra, complexion, size, Manglik status, family background, bio, glamour shot upload |
+| **Swipe matchmaking** | Browse curated sock profiles; reject or accept to trigger a match |
+| **Rishta Aunty** | Floating “aunty” with unsolicited, passive-aggressive matrimonial advice |
+| **Pandit-Ji Kundali report** | Post-match ₹51 shagun compatibility certificate (Dhaaga, Varna, Elasticity, Dryer Bhakoot, etc.) |
+| **Success stories & pricing** | Testimonial carousel plus Basic / Gold / Shaadi Deluxe tiers |
 
-**The "Rishta Aunty" AI Chatbot** \: A floating icon of a stereotypical "aunty" who provides unsolicited, passive-aggressive advice to users, such as *"Beta, don't be too picky. The elastic won't last forever." and "Arre, don’t match with polyester, cotton is more susheel."
+---
 
-**The "Pandit-Ji's" Kundali Compatibility Report** \*: After a match is made, users can pay a ₹51 shagun to generate a detailed compatibility report. This certificate rates the pairing on critical metrics like:
+## How it works
 
-  * *Dhaaga Guna* (Thread Compatibility)
-  * *Varna Guna* (Color Fastness)
-  * *Elasticity Guna* (Flexibility)
-  * *Dryer Bhakoot Dosh* (Existential Threat Analysis)\*
+![Moje Ki Jodi app flow](flowchart-mojekijodi.png)
 
-### 💖 Success Stories & Testimonials
+1. **Entry (`/`)** — Complete a sock-themed image CAPTCHA to prove you are a genuine sock parent.
+2. **Home (`/home`)** — Hero, stats, success stories, featured profiles, pricing, footer.
+3. **Register (`/register`)** — Fill the Bio-Dhaga form and upload a glamour shot (UI flow; no backend persistence).
+4. **Matchmaking (`/matchmaking`)** — Swipe through hardcoded profiles, match, then view compatibility report and Aunty tips.
 
-**Happy Customers** \*:
+---
 
-  * "We lost hope after years in the laundry basket… until Moje Ki Jodi reunited us." – The Striped Twins
-  * "Earlier, I was just a single sock. Now, I’m part of a power couple." – Black Adidas (Right Foot)
+## Tech stack
 
-### 💰 Monetization Strategy (Our Premium Plans)
+| Layer | Stack |
+|-------|--------|
+| **Framework** | React 18 + TypeScript |
+| **Build** | Vite 5 |
+| **Routing** | React Router DOM 7 |
+| **Styling** | Tailwind CSS 3 (custom saffron / maroon / gold theme) |
+| **Icons** | Lucide React |
+| **Data** | Frontend-only; sock profiles and copy live in component state (e.g. `Matchmaking.tsx`) |
 
-**Subscription Tiers** \*:
+There is no backend or database — the experience is fully client-side for demo and presentation.
 
-  * *Basic (Free)*: 3 swipes per day.
-  * *Gold (₹21/month)*: Unlimited swipes + early access to designer sock profiles.
-  * *Shaadi Deluxe (₹101/one-time)*: A direct, one-on-one consultation with our Rishta Aunty AI.
+---
 
------
+## Project structure
 
-## 🎬 Demo Video
+```
+moje-ki-jodi/
+├── src/
+│   ├── pages/
+│   │   ├── EntryPage.tsx      # CAPTCHA gate
+│   │   ├── Homepage.tsx       # Landing & marketing
+│   │   ├── Registration.tsx   # Bio-Dhaga form
+│   │   └── Matchmaking.tsx    # Swipe UI + profiles
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   ├── RishtaAunty.tsx
+│   │   ├── MatchModal.tsx
+│   │   ├── CompatibilityReport.tsx
+│   │   ├── PricingSection.tsx
+│   │   ├── TestimonialCarousel.tsx
+│   │   └── UploadPopup.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+└── package.json
+```
 
-**Link** : https://github.com/avyakt06jain/wreckathon-moje-ki-jodi/blob/main/Introducing%20MojeKiJodi....mp4
+---
 
------
+## Getting started
 
-## 🛠 Tech Stack & Implementation
+### Prerequisites
 
-**Frontend** \*: React, Vite for fast development, and Chakra UI for pre-built components.
-**Backend** \*: This is a frontend-only project for the purpose of the hackathon. The "database" is a simple JavaScript file (data.js) containing the sock profiles.
+- Node.js 18+ and npm
 
------
+### Install and run
 
-## ⚙ How to Run This Project Locally
+```bash
+git clone https://github.com/avyakt06jain/moje-ki-jodi.git
+cd moje-ki-jodi
+npm install
+npm run dev
+```
 
-**Instructions** \*:
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-1.  Clone the repository: git clone [your-repo-url]
-2.  Navigate to the project directory: cd moje-ki-jodi
-3.  Install dependencies: npm install
-4.  Run the development server: npm run dev
-5.  Open your browser to http://localhost:5173
+### Other scripts
 
------
+```bash
+npm run build    # Production build
+npm run preview  # Preview production build
+npm run lint     # ESLint
+```
 
-## ⚖ Legal Disclaimer
+---
 
-**Terms & Conditions** \*:
+## Premium plans (in-app)
 
-  * Moje ki Jodi is not responsible for post-marriage color fading or shrinkage.
-  * We are not liable for any pairs separated by pets, toddlers, or mysterious laundry phenomena.
-  * All disputes will be settled in the Laundry Court of India.
+| Plan | Price | Highlights |
+|------|-------|------------|
+| **Basic** | Free | 3 swipes/day, standard matching |
+| **Gold** | ₹21/month | Unlimited swipes, designer sock early access |
+| **Shaadi Deluxe** | ₹101/month | Rishta Aunty consultation, compatibility reports |
+
+---
+
+## Success stories
+
+> *"We lost hope after years in the laundry basket… until Moje Ki Jodi reunited us."* — The Striped Twins  
+
+> *"Earlier, I was just a single sock. Now, I'm part of a power couple."* — Black Adidas (Right Foot)
+
+---
+
+## Legal disclaimer
+
+- Moje Ki Jodi is not responsible for post-marriage color fading or shrinkage.
+- We are not liable for pairs separated by pets, toddlers, or mysterious laundry phenomena.
+- All disputes shall be settled in the **Laundry Court of India**.
+
+---
+
+## License
+
+This project is a humorous demo / portfolio piece. Use and share with appropriate credit.
